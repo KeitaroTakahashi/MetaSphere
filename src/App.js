@@ -1,7 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css, jsx, Global } from '@emotion/react';
 import emotionReset from 'emotion-reset';
-import { Work } from './work4';
+import { Work } from './work5';
+import { Header } from './header';
+import {SketchPicker} from 'react-color'
 
 const globalStyles = css`
     ${emotionReset}
@@ -17,7 +19,9 @@ const App = () => {
   return (
     <div>
       <Global styles={globalStyles} />
+      <Header />
       <Work />
+      <SketchPicker />
     </div>
   );
 };
